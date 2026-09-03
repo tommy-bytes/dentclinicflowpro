@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy · DentClinicFlow Pro</title>
+<meta name="description" content="The clinic's data stays in the clinic's own iCloud account. The developer never receives it.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <div class="mark">DCF</div>
+      <div>
+        <h1>DentClinicFlow Pro</h1>
+        <p>Appointments, staff schedules and attendance for clinics</p>
+      </div>
+    </div>
+    <nav>
+      <a href="./">Home</a>
+      <a href="privacy-en.html" class="on">Privacy</a>
+      <a href="terms.html">Terms (EULA)</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Română</a>
+    </nav>
+  </div>
+</header>
+<main><div class="wrap">
+<h2>Privacy Policy</h2>
+<p class="lead">The clinic's data stays in the clinic's own iCloud account and on its own devices.
+The developer never receives it, never sees it and never stores it.</p>
+<p class="meta">Version 1.0 · effective 3 September 2026</p>
+
+<h3>1. In short</h3>
+<ul>
+  <li>The app <strong>sends nothing to any server operated by the developer</strong>. There is no
+      such server.</li>
+  <li>All clinic data — patients, staff, appointments, attendance — is written
+      <strong>on the device</strong> and synchronised through the
+      <strong>private CloudKit database in the user's own iCloud account</strong>.</li>
+  <li><strong>No analytics, no tracking, no third-party SDKs</strong> and no advertising
+      identifier.</li>
+  <li>Subscription payment is handled entirely by Apple. The developer receives no card number and
+      no payment details.</li>
+</ul>
+
+<h3>2. Who the controller is</h3>
+<p>The <strong>clinic</strong> using the app is the data controller for the patient and staff data
+it enters. The clinic decides what it records, how long it keeps it, and who may see it through the
+app's roles.</p>
+<p><strong>MSCS di Stefan E.</strong> supplies the software. It is not a processor of the clinic's
+data, because it never receives it: the data moves only between the clinic's devices and the
+clinic's own iCloud account, through Apple's infrastructure.</p>
+<dl class="key">
+  <dt>Developer</dt><dd>MSCS di Stefan E.</dd>
+  <dt>Registered address</dt><dd><span class="todo">[to be completed before publication]</span></dd>
+  <dt>Contact</dt><dd><a href="mailto:stefan@support-remote.org">stefan@support-remote.org</a></dd>
+</dl>
+
+<h3>3. What the app processes, and where it goes</h3>
+<table>
+  <tr><th>Category</th><th>Examples</th><th>Stored where</th></tr>
+  <tr>
+    <td>Patient data</td>
+    <td>name, phone, email, date of birth (optional), preferred language, clinic notes</td>
+    <td>device + the clinic's private CloudKit</td>
+  </tr>
+  <tr>
+    <td>Staff data</td>
+    <td>name, role, specialty, contact, shifts, attendance, leave</td>
+    <td>device + the clinic's private CloudKit</td>
+  </tr>
+  <tr>
+    <td>Appointments</td>
+    <td>time, duration, doctor, room, type, reason, internal notes</td>
+    <td>device + the clinic's private CloudKit</td>
+  </tr>
+  <tr>
+    <td>Apple identifier</td>
+    <td>the stable user identifier returned by Sign in with Apple</td>
+    <td>the device's Keychain</td>
+  </tr>
+  <tr>
+    <td>Audit log</td>
+    <td>who, what, when, previous and new value, device type</td>
+    <td>device + the clinic's private CloudKit</td>
+  </tr>
+</table>
+<p>The app has <strong>no account of its own</strong>. People sign in with Sign in with Apple, and
+only the stable user identifier is kept. The name and email Apple offers on first sign-in are used
+to pre-fill the clinic setup form and are not stored if that form is not completed.</p>
+
+<h3>4. Location</h3>
+<p>Location is read <strong>only at the moment somebody clocks in or out</strong>, and only if the
+clinic has turned location verification on. The app does not track location in the background and
+does not monitor movement.</p>
+<p>What is kept from the reading is the <strong>verification outcome</strong> ("at the clinic",
+"away from the clinic", "location access off", "too imprecise") and the <strong>distance in
+metres</strong> from the centre of the clinic's area. <strong>Coordinates are not stored.</strong></p>
+
+<h3>5. Camera and biometrics</h3>
+<p>The camera is used only to read a QR code — a clinic invitation, or the attendance code shown at
+reception. No photograph or image is saved.</p>
+<p>Identity at clock-in is confirmed through Face ID or Touch ID using the system's
+LocalAuthentication service. <strong>The app never receives or stores biometric data</strong>; the
+system answers only yes or no.</p>
+
+<h3>6. Notifications</h3>
+<p>Notifications about appointments, shifts and leave are generated locally on the device. The app
+uses CloudKit's silent notifications only to learn that data changed on another device belonging to
+the same clinic. No marketing notifications are sent.</p>
+<p>In settings, a clinic can hide patient names from previews, so a lock screen shows "Upcoming
+appointment at 10:30" rather than the person's name.</p>
+
+<h3>7. Payment</h3>
+<p>The subscription is bought through the App Store. Apple processes the payment and tells the app
+only whether the subscription is active. The developer <strong>does not receive</strong> card
+details, billing address or the buyer's identity — only the aggregated sales reports Apple
+provides.</p>
+
+<h3>8. How long data is kept</h3>
+<p>Data stays for as long as the clinic keeps it. Deleting a patient removes them from the
+database; their appointments remain in the clinic's operational history without their name.
+Security-relevant audit entries are not deleted automatically.</p>
+<p>Deleting the app removes the local copy. Data in the clinic's iCloud account is removed from
+that account's own iCloud settings.</p>
+
+<h3>9. Data subject rights</h3>
+<p>For patient and staff data, requests for access, rectification, erasure, restriction,
+portability or objection go to the <strong>clinic</strong> as controller. The developer cannot
+answer them, because it does not hold the data and has no technical means of reaching it.</p>
+<p>For anything about the app itself, write to
+<a href="mailto:stefan@support-remote.org">stefan@support-remote.org</a>.</p>
+
+<h3>10. Children</h3>
+<p>The app is for clinic staff, not the general public, and is not directed at children. A clinic
+may record a minor as a patient on the same basis as in any other clinic record, under its own
+responsibility.</p>
+
+<h3>11. Changes</h3>
+<p>If this policy changes, the version and effective date at the top of the page are updated.
+Earlier versions remain in the public history of this site's repository.</p>
+</div></main>
+<footer><div class="wrap">
+  © 2026 MSCS di Stefan E. · <a href="mailto:stefan@support-remote.org">stefan@support-remote.org</a>
+  · <a href="privacy.html">Versiunea în română</a>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Politica de confidențialitate · DentClinicFlow Pro</title>
+<meta name="description" content="Datele clinicii rămân în contul iCloud al clinicii. Producătorul nu le primește și nu le vede.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <div class="mark">DCF</div>
+      <div>
+        <h1>DentClinicFlow Pro</h1>
+        <p>Programări, program de lucru și pontaj pentru clinici</p>
+      </div>
+    </div>
+    <nav>
+      <a href="./">Acasă</a>
+      <a href="privacy.html" class="on">Confidențialitate</a>
+      <a href="terms.html">Termeni (EULA)</a>
+      <a href="support.html">Asistență</a>
+      <a href="privacy-en.html">English</a>
+    </nav>
+  </div>
+</header>
+<main><div class="wrap">
+<h2>Politica de confidențialitate</h2>
+<p class="lead">Datele clinicii rămân în contul iCloud al clinicii și pe dispozitivele ei.
+Producătorul aplicației nu le primește, nu le vede și nu le stochează.</p>
+<p class="meta">Versiunea 1.0 · în vigoare din 3 septembrie 2026</p>
+
+<h3>1. Pe scurt</h3>
+<ul>
+  <li>Aplicația <strong>nu trimite date către niciun server al producătorului</strong>.
+      Producătorul nu operează niciun server pentru această aplicație.</li>
+  <li>Toate datele clinicii — pacienți, personal, programări, pontaj — sunt scrise
+      <strong>pe dispozitiv</strong> și sincronizate prin
+      <strong>baza de date privată CloudKit din contul iCloud al utilizatorului</strong>.</li>
+  <li><strong>Nu există analytics, nu există urmărire, nu există SDK-uri de terță parte</strong>
+      și niciun identificator publicitar.</li>
+  <li>Plata abonamentului este gestionată integral de Apple. Producătorul nu primește
+      numărul cardului și nicio dată de plată.</li>
+</ul>
+
+<h3>2. Cine este operatorul de date</h3>
+<p><strong>Clinica</strong> care folosește aplicația este operatorul de date („data controller")
+pentru datele pacienților și ale personalului pe care le introduce. Clinica decide ce date
+introduce, cât timp le păstrează și cui îi dă acces prin rolurile din aplicație.</p>
+<p><strong>MSCS di Stefan E.</strong> furnizează programul. Nu este împuternicit („processor")
+pentru datele clinicii, pentru că nu le primește niciodată: ele circulă exclusiv între
+dispozitivele clinicii și contul iCloud al acesteia, prin infrastructura Apple.</p>
+<dl class="key">
+  <dt>Producător</dt><dd>MSCS di Stefan E.</dd>
+  <dt>Adresă înregistrată</dt><dd><span class="todo">[de completat înainte de publicare]</span></dd>
+  <dt>Contact</dt><dd><a href="mailto:stefan@support-remote.org">stefan@support-remote.org</a></dd>
+</dl>
+
+<h3>3. Ce prelucrează aplicația și unde ajunge</h3>
+<table>
+  <tr><th>Categorie</th><th>Exemple</th><th>Unde este stocată</th></tr>
+  <tr>
+    <td>Date despre pacienți</td>
+    <td>nume, telefon, email, data nașterii (opțional), limba preferată, note ale clinicii</td>
+    <td>dispozitiv + CloudKit privat al clinicii</td>
+  </tr>
+  <tr>
+    <td>Date despre personal</td>
+    <td>nume, rol, specialitate, contact, ture, pontaj, concedii</td>
+    <td>dispozitiv + CloudKit privat al clinicii</td>
+  </tr>
+  <tr>
+    <td>Programări</td>
+    <td>oră, durată, medic, cabinet, tip, motiv, note interne</td>
+    <td>dispozitiv + CloudKit privat al clinicii</td>
+  </tr>
+  <tr>
+    <td>Identificator Apple</td>
+    <td>identificatorul stabil primit de la „Autentificare cu Apple"</td>
+    <td>Keychain-ul dispozitivului</td>
+  </tr>
+  <tr>
+    <td>Jurnal de audit</td>
+    <td>cine, ce, când, valoarea veche și cea nouă, tipul dispozitivului</td>
+    <td>dispozitiv + CloudKit privat al clinicii</td>
+  </tr>
+</table>
+<p>Aplicația <strong>nu are un cont propriu</strong>. Autentificarea se face cu „Autentificare cu
+Apple", iar din ea se păstrează doar identificatorul stabil de utilizator. Numele și adresa de
+email oferite de Apple la prima autentificare sunt folosite doar pentru a precompleta formularul
+de creare a clinicii și nu sunt salvate dacă acesta nu este finalizat.</p>
+
+<h3>4. Localizarea</h3>
+<p>Locația este citită <strong>doar în momentul în care cineva pontează</strong> intrarea sau
+ieșirea și numai dacă clinica a activat verificarea locației. Aplicația nu urmărește locația în
+fundal și nu monitorizează deplasările.</p>
+<p>Din citire se păstrează <strong>rezultatul verificării</strong> („la clinică", „în afara
+clinicii", „acces dezactivat", „prea imprecisă") și <strong>distanța în metri</strong> față de
+centrul zonei clinicii. <strong>Coordonatele nu sunt stocate.</strong></p>
+
+<h3>5. Camera și datele biometrice</h3>
+<p>Camera este folosită exclusiv pentru a citi un cod QR — o invitație în clinică sau codul de
+pontaj afișat la recepție. Nu se salvează nicio fotografie și nicio imagine.</p>
+<p>Confirmarea identității la pontaj se face prin Face ID sau Touch ID, folosind serviciul
+LocalAuthentication al sistemului. <strong>Aplicația nu primește și nu stochează date
+biometrice</strong>; sistemul îi răspunde doar cu „da" sau „nu".</p>
+
+<h3>6. Notificări</h3>
+<p>Notificările despre programări, ture și concedii sunt generate local, pe dispozitiv. Aplicația
+folosește notificările tăcute ale CloudKit doar pentru a afla că datele s-au schimbat pe alt
+dispozitiv al aceleiași clinici. Nu se trimit notificări de marketing.</p>
+<p>Din setări, clinica poate ascunde numele pacienților din previzualizări, astfel încât pe ecranul
+blocat să apară „Programare la 10:30", nu numele persoanei.</p>
+
+<h3>7. Plata</h3>
+<p>Abonamentul se cumpără prin App Store. Apple procesează plata și comunică aplicației doar dacă
+abonamentul este activ. Producătorul <strong>nu primește</strong> date de card, adresă de facturare
+sau identitatea cumpărătorului, ci doar rapoartele agregate de vânzări puse la dispoziție de Apple.</p>
+
+<h3>8. Cât timp se păstrează datele</h3>
+<p>Datele rămân atât timp cât clinica le păstrează. Ștergerea unui pacient îl elimină din bază;
+programările lui rămân în istoricul operațional al clinicii, fără numele lui. Intrările din
+jurnalul de audit relevante pentru securitate nu se șterg automat.</p>
+<p>Dezinstalarea aplicației elimină copia locală. Datele din contul iCloud al clinicii se șterg din
+setările iCloud ale contului respectiv.</p>
+
+<h3>9. Drepturile persoanelor vizate</h3>
+<p>Pentru datele pacienților și ale personalului, cererile de acces, rectificare, ștergere,
+restricționare, portabilitate sau opoziție se adresează <strong>clinicii</strong>, în calitate de
+operator. Producătorul nu poate răspunde acestor cereri, pentru că nu deține datele și nu are
+mijloace tehnice de a le accesa.</p>
+<p>Pentru orice ține de aplicația în sine, ne poți scrie la
+<a href="mailto:stefan@support-remote.org">stefan@support-remote.org</a>.</p>
+
+<h3>10. Copii</h3>
+<p>Aplicația este destinată personalului unei clinici, nu publicului larg, și nu se adresează
+copiilor. Un pacient minor poate fi înregistrat de clinică în aceleași condiții în care ar fi
+înregistrat în orice altă evidență a clinicii, sub răspunderea acesteia.</p>
+
+<h3>11. Modificări</h3>
+<p>Dacă această politică se modifică, versiunea și data de intrare în vigoare de la începutul
+paginii se actualizează. Versiunile anterioare rămân în istoricul public al depozitului de cod al
+acestui site.</p>
+</div></main>
+<footer><div class="wrap">
+  © 2026 MSCS di Stefan E. · <a href="mailto:stefan@support-remote.org">stefan@support-remote.org</a>
+  · <a href="privacy-en.html">English version</a>
+</div></footer>
+</body>
+</html>
