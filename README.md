@@ -13,10 +13,12 @@ iPadOS și iOS).
 
 Site static, fără JavaScript, fără cookie-uri, fără urmărire.
 
-## De completat înainte de publicare
+## Producător
 
-Adresa înregistrată a producătorului, marcată cu `[de completat înainte de publicare]`
-în `privacy.html`, `privacy-en.html` și `terms.html`.
+Paginile identifică producătorul ca **MSCS di Stefan E.**, cu
+stefan@support-remote.org drept contact — la fel ca celelalte aplicații. Dacă
+adresa înregistrată trebuie să apară, se adaugă un rând `<dt>` în blocul de
+contact din `privacy.html`, `privacy-en.html` și `terms.html`.
 
 ## Ce nu se pune aici
 
