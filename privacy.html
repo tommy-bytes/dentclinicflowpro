@@ -108,8 +108,9 @@ biometrice</strong>; sistemul îi răspunde doar cu „da" sau „nu".</p>
 
 <h3>6. Notificări</h3>
 <p>Notificările despre programări, ture și concedii sunt generate local, pe dispozitiv. Aplicația
-folosește notificările tăcute ale CloudKit doar pentru a afla că datele s-au schimbat pe alt
-dispozitiv al aceleiași clinici. Nu se trimit notificări de marketing.</p>
+nu folosește notificări push: modificările făcute pe alt dispozitiv al aceleiași clinici ajung prin
+sincronizarea CloudKit atunci când aplicația este deschisă sau revine în prim-plan. Nu se trimit
+notificări de marketing.</p>
 <p>Din setări, clinica poate ascunde numele pacienților din previzualizări, astfel încât pe ecranul
 blocat să apară „Programare la 10:30", nu numele persoanei.</p>
 

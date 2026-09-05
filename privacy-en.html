@@ -108,8 +108,9 @@ system answers only yes or no.</p>
 
 <h3>6. Notifications</h3>
 <p>Notifications about appointments, shifts and leave are generated locally on the device. The app
-uses CloudKit's silent notifications only to learn that data changed on another device belonging to
-the same clinic. No marketing notifications are sent.</p>
+uses no push notifications: changes made on another device belonging to the same clinic arrive
+through CloudKit sync when the app is opened or returns to the foreground. No marketing
+notifications are sent.</p>
 <p>In settings, a clinic can hide patient names from previews, so a lock screen shows "Upcoming
 appointment at 10:30" rather than the person's name.</p>
 
